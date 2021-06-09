@@ -1,22 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="RtlSymmetry"
+    tools:targetApi="o">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/root"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="?attr/colorPrimarySurface"
+        android:theme="@style/Owl.Blue"
+        android:transitionGroup="false"
+        app:paddingLeftSystemWindowInsets="@{true}"
+        app:paddingRightSystemWindowInsets="@{true}"
+        app:paddingTopSystemWindowInsets="@{true}"
+        tools:context=".ui.featured.FeaturedFragment">
 
-        <TextView
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="320dp"
-            android:text="FeaturedFragment"
-            android:textAlignment="center"
-            android:textSize="30sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:theme="@style/ThemeOverlay.Owl.Blue.Dark"
+            app:liftOnScroll="true"
+            app:liftOnScrollTargetViewId="@id/featured_grid">
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="80dp"
+                android:paddingStart="@dimen/grid_2"
+                app:layout_scrollFlags="scroll|enterAlways|snap"
+                app:menu="@menu/account"
+                app:navigationIcon="@drawable/ic_lockup_white" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/featured_grid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:paddingHorizontal="@dimen/grid_1_5"
+            android:paddingBottom="@dimen/grid_1"
+            android:scrollbarStyle="outsideOverlay"
+            android:scrollbars="vertical"
+            app:hasFixedSize="@{true}"
+            app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager"
+            app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+            app:spanCount="@integer/featured_grid_columns"
+            tools:listitem="@layout/featured_item" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
 </layout>

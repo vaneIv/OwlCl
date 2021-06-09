@@ -6,7 +6,6 @@ import android.graphics.Shader.TileMode.*
 import android.graphics.Paint.Style.FILL
 import android.graphics.drawable.Drawable
 import androidx.annotation.ColorInt
-
 import androidx.annotation.Px
 import androidx.core.graphics.toRectF
 import androidx.core.graphics.withScale

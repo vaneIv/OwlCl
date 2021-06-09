@@ -31,7 +31,7 @@ class SpringAddItemAnimator : DefaultItemAnimator() {
                 val tySpring = holder.itemView.spring(
                     SpringAnimation.TRANSLATION_Y,
                     stiffness = 350f,
-                    damping = 0.06f
+                    damping = 0.6f
                 )
                 val aSpring = holder.itemView.spring(
                     SpringAnimation.ALPHA,
