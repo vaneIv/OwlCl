@@ -1,4 +1,4 @@
-package com.vane.android.ui.search
+package com.vane.android.owlcl.ui.search
 
 import androidx.fragment.app.Fragment
 import com.vane.android.owlcl.R

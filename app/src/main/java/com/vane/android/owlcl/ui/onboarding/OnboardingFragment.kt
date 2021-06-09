@@ -1,4 +1,4 @@
-package com.vane.android.ui.onboarding
+package com.vane.android.owlcl.ui.onboarding
 
 import androidx.fragment.app.Fragment
 import com.vane.android.owlcl.R

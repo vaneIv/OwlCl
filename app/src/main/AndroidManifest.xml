@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Owl.Blue">
         <activity
-            android:name="com.vane.android.ui.MainActivity"
+            android:name=".ui.MainActivity"
             android:theme="@style/Owl.Blue">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

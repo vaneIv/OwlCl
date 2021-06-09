@@ -1,4 +1,4 @@
-package com.vane.android.ui.learn
+package com.vane.android.owlcl.ui.learn
 
 import androidx.fragment.app.Fragment
 import com.vane.android.owlcl.R

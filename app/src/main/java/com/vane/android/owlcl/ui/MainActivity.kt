@@ -1,4 +1,4 @@
-package com.vane.android.ui
+package com.vane.android.owlcl.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

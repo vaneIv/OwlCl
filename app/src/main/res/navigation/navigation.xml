@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/lessons"
-        android:name="com.vane.android.ui.lessons.LessonsFragment"
+        android:name="com.vane.android.owlcl.ui.lessons.LessonsFragment"
         android:label="fragment_lessons"
         tools:layout="@layout/fragment_lessons">
         <argument
@@ -19,7 +19,7 @@
     </fragment>
     <fragment
         android:id="@+id/lessonsSheetFragment"
-        android:name="com.vane.android.ui.lessons.LessonsSheetFragment"
+        android:name="com.vane.android.owlcl.ui.lessons.LessonsSheetFragment"
         android:label="fragment_lessons_sheet"
         tools:layout="@layout/fragment_lessons_sheet">
         <action
@@ -29,12 +29,12 @@
     </fragment>
     <fragment
         android:id="@+id/search"
-        android:name="com.vane.android.ui.search.SearchFragment"
+        android:name="com.vane.android.owlcl.ui.search.SearchFragment"
         android:label="fragment_search"
         tools:layout="@layout/fragment_search" />
     <fragment
         android:id="@+id/onboarding"
-        android:name="com.vane.android.ui.onboarding.OnboardingFragment"
+        android:name="com.vane.android.owlcl.ui.onboarding.OnboardingFragment"
         android:label="fragment_onboarding"
         tools:layout="@layout/fragment_onboarding">
         <action
@@ -44,7 +44,7 @@
     </fragment>
     <fragment
         android:id="@+id/featured"
-        android:name="com.vane.android.ui.featured.FeaturedFragment"
+        android:name="com.vane.android.owlcl.ui.featured.FeaturedFragment"
         android:label="fragment_featured"
         tools:layout="@layout/fragment_featured">
         <action
@@ -53,7 +53,7 @@
     </fragment>
     <fragment
         android:id="@+id/learn"
-        android:name="com.vane.android.ui.learn.LearnFragment"
+        android:name="com.vane.android.owlcl.ui.learn.LearnFragment"
         android:label="fragment_learn"
         tools:layout="@layout/fragment_learn">
         <argument
@@ -62,7 +62,7 @@
     </fragment>
     <fragment
         android:id="@+id/myCourses"
-        android:name="com.vane.android.ui.mycourses.MyCoursesFragment"
+        android:name="com.vane.android.owlcl.ui.mycourses.MyCoursesFragment"
         android:label="fragment_my_courses"
         tools:layout="@layout/fragment_my_courses">
         <action
