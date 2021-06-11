@@ -6,10 +6,10 @@
     app:startDestination="@id/onboarding">
 
     <fragment
-        android:id="@+id/lessons"
-        android:name="com.vane.android.owlcl.ui.lessons.LessonsFragment"
-        android:label="fragment_lessons"
-        tools:layout="@layout/fragment_lessons">
+        android:id="@+id/lesson"
+        android:name="com.vane.android.owlcl.ui.lessons.LessonFragment"
+        android:label="fragment_lesson"
+        tools:layout="@layout/fragment_lesson">
         <argument
             android:name="course_id"
             app:argType="long" />
@@ -23,8 +23,8 @@
         android:label="fragment_lessons_sheet"
         tools:layout="@layout/fragment_lessons_sheet">
         <action
-            android:id="@+id/action_lessons_sheet_to_lessons"
-            app:destination="@id/lessons"
+            android:id="@+id/action_lessons_sheet_to_lesson"
+            app:destination="@id/lesson"
             app:launchSingleTop="true" />
     </fragment>
     <fragment

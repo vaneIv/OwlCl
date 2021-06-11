@@ -10,7 +10,7 @@ data class Lesson(
     val imageContentDescription: String = ""
 )
 
-object lessonDiff : DiffUtil.ItemCallback<Lesson>() {
+object LessonDiff : DiffUtil.ItemCallback<Lesson>() {
     override fun areItemsTheSame(oldItem: Lesson, newItem: Lesson) = oldItem.title == newItem.title
 
     override fun areContentsTheSame(oldItem: Lesson, newItem: Lesson) = oldItem == newItem
