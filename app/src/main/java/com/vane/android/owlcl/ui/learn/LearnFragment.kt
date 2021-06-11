@@ -40,9 +40,9 @@ class LearnFragment : Fragment() {
                 submitList(courses)
             }
         }
-//        (childFragmentManager.findFragmentById(R.id.lessons_sheet) as? LessonsSheetFragment)?.let {
-//            // it.course = course
-//        }
+        (childFragmentManager.findFragmentById(R.id.lessons_sheet) as? LessonsSheetFragment)?.let {
+            // it.course = course
+        }
         postponeEnterTransition(1000L, TimeUnit.MILLISECONDS)
         val interp = AnimationUtils.loadInterpolator(
                 context,
@@ -52,21 +52,21 @@ class LearnFragment : Fragment() {
             duration = 400L
             interpolator = interp
         }
-//        enterTransition = DiagonalSlide().apply {
-//            addTarget(R.id.lessons_sheet)
-//            startDelay = 200L
-//            duration = 200L
-//            interpolator = interp
-//        }
-//        sharedElementReturnTransition = MaterialContainerTransition().apply {
-//            duration = 300L
-//            interpolator = interp
-//        }
-//        returnTransition = DiagonalSlide().apply {
-//            addTarget(R.id.lessons_sheet)
-//            duration = 100L
-//            interpolator = interp
-//        }
+        enterTransition = DiagonalSlide().apply {
+            addTarget(R.id.lessons_sheet)
+            startDelay = 200L
+            duration = 200L
+            interpolator = interp
+        }
+        sharedElementReturnTransition = MaterialContainerTransition().apply {
+            duration = 300L
+            interpolator = interp
+        }
+        returnTransition = DiagonalSlide().apply {
+            addTarget(R.id.lessons_sheet)
+            duration = 100L
+            interpolator = interp
+        }
         return binding.root
     }
 }
