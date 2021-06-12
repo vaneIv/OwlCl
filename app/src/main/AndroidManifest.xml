@@ -2,20 +2,34 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.vane.android.owlcl">
 
+    <!-- Load images from Unsplash-->
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
+        android:name="OwlApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.OwlCl">
-        <activity android:name=".MainActivity">
+        android:theme="@style/Owl.Blue">
+        <activity
+            android:name=".ui.MainActivity"
+            android:theme="@style/Owl.Blue">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!--Preload custom fonts-->
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <meta-data
+            android:name="fontProviderRequests"
+            android:value="Rubik" />
     </application>
 
 </manifest>

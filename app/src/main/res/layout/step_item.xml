@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="step"
+            type="com.vane.android.owlcl.ui.lessons.Step" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/grid_0_5"
+        android:orientation="vertical"
+        android:padding="@dimen/grid_2">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@{step.title}"
+            android:textAppearance="?attr/textAppearanceHeadline6"
+            app:lineHeight="36sp"
+            tools:text="@sample/steps.json/data/title" />
+
+        <TextView
+            android:id="@+id/body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/grid_2"
+            android:gravity="center"
+            android:text="@{step.body}"
+            android:textAppearance="?attr/textAppearanceBody1"
+            tools:text="@sample/steps.json/data/body" />
+
+    </LinearLayout>
+</layout>
