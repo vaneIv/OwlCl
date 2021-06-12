@@ -13,7 +13,7 @@
 
         <variable
             name="clickHandler"
-            type="com.vane.android.owlcl.ui.featured.CourseViewClick" />
+            type="com.vane.android.owlcl.ui.mycourses.CourseViewClick" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
